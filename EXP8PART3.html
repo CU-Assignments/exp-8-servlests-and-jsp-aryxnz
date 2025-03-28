@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance</title>
+</head>
+<body>
+    <h2>Enter Attendance Details</h2>
+    <form action="AttendanceServlet" method="post">
+        <label>Student ID:</label>
+        <input type="text" name="studentId" required><br><br>
+        <label>Student Name:</label>
+        <input type="text" name="studentName" required><br><br>
+        <label>Attendance:</label>
+        <select name="attendance">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
